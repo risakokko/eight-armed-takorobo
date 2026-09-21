@@ -426,47 +426,6 @@ Technology, The University of Tokyo<br>IROS 2026</span>
 </section>
 <!-- End youtube video -->
 
-<style>
-  /* 1. カルーセルの各要素（item）の幅と配置を強制修正 */
-  .results-carousel .item {
-    width: 100% !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 0 10px; /* 隣の動画とのすき間 */
-  }
-
-  /* 2. 動画枠（コンテナ）を100%幅に広げる */
-  .results-carousel .item .video-container {
-    position: relative !important;
-    width: 100% !important;
-    max-width: 800px; /* 動画が大きくなりすぎないように調整（お好みで変更可） */
-    padding-top: 56.25% !important; /* 16:9 のアスペクト比を維持 */
-    background-color: #000;
-    border-radius: 8px;
-    overflow: hidden;
-    margin: 0 auto !important; /* 中央寄せ */
-  }
-
-  /* 3. iframe と video を枠一杯にピッタリ広げる */
-  .results-carousel .item .video-container iframe,
-  .results-carousel .item .video-container video {
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    border: 0 !important;
-  }
-
-  /* 4. キャプション（字幕）の余白調整 */
-  .results-carousel .item .subtitle {
-    margin-top: 10px !important;
-    width: 100% !important;
-  }
-</style>
-
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
